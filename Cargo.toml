@@ -1,0 +1,38 @@
+[package]
+name = "aerolineas_rusticas"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = {version = "1.0.210", features = ["derive"]}
+serde_json = "1.0.128"
+rand = "0.8.5"
+chrono = "0.4.38"
+eframe = "0.29.1"
+egui = "0.29.1"
+egui_extras = "0.29.1"
+env_logger = "0.11"
+walkers = "0.25.0"
+lz4 = "1.24"
+snap = "1.1"
+murmur3 = "0.5.2"
+threadpool = "1.8.1"
+chksum-md5 = "0.0.0"
+native-tls = "0.2.12"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "simulator"
+path = "src/simulator.rs"
+
+
+[[bin]]
+name = "node"
+path = "src/nodes/node.rs"
+
+[[bin]]
+name = "nodes"
+path = "src/nodes.rs"

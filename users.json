@@ -1,0 +1,14 @@
+[
+    {
+        "name": "client_ui",
+        "password": "1234"
+    },
+    {
+        "name": "simulator",
+        "password": "0000"
+    },
+    {
+        "name": "admin",
+        "password": "admin"
+    }
+]

@@ -1,0 +1,90 @@
+version: "3.8"
+
+  
+services:
+  node-8080:
+    image: node:latest
+    command: tail -f /dev/null
+    environment:
+      INTERNAL_PORT: 8080
+      EXTERNAL_PORT: 8090
+    network_mode: "host"
+    container_name: node-8080
+    
+  
+  node-8081:
+    image: node:latest
+    command: tail -f /dev/null
+    environment:
+      INTERNAL_PORT: 8081
+      EXTERNAL_PORT: 8091
+    network_mode: "host"
+    container_name: node-8081
+    depends_on:
+      - node-8080
+      
+  node-8082:
+    image: node:latest
+    command: tail -f /dev/null
+    environment:
+      INTERNAL_PORT: 8082
+      EXTERNAL_PORT: 8092
+    network_mode: "host"
+    container_name: node-8082
+    depends_on:
+      - node-8081
+  
+  node-8083:
+    image: node:latest
+    command: tail -f /dev/null
+    environment:
+      INTERNAL_PORT: 8083
+      EXTERNAL_PORT: 8093
+    network_mode: "host"
+    container_name: node-8083
+    depends_on:
+      - node-8082
+  
+  node-8084:
+    image: node:latest
+    command: tail -f /dev/null
+    environment:
+      INTERNAL_PORT: 8084
+      EXTERNAL_PORT: 8094
+    network_mode: "host"
+    container_name: node-8084
+    depends_on:
+      - node-8083
+
+  node-8085:
+    image: node:latest
+    command: tail -f /dev/null
+    environment:
+      INTERNAL_PORT: 8085
+      EXTERNAL_PORT: 8095
+    network_mode: "host"
+    container_name: node-8085
+    depends_on:
+      - node-8084
+    
+  node-8086:
+    image: node:latest
+    command: tail -f /dev/null
+    environment:
+      INTERNAL_PORT: 8086
+      EXTERNAL_PORT: 8096
+    network_mode: "host"
+    container_name: node-8086
+    depends_on:
+      - node-8085
+
+  node-8087:
+    image: node:latest
+    command: tail -f /dev/null
+    environment:
+      INTERNAL_PORT: 8087
+      EXTERNAL_PORT: 8097
+    network_mode: "host"
+    container_name: node-8087
+    depends_on:
+      - node-8086
