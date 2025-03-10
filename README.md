@@ -15,16 +15,6 @@ Programa de seguimiento de vuelos desarrollado como trabajo práctico para Talle
 - [Mariano Merlinsky](https://github.com/Mario-Merlinsky)
 - [Nicolás Chaia](https://github.com/NicolasChaia)
 
-**Corrector:**
-- [Martin Miletta](https://github.com/mmiletta)
-
-**Ayudantes:**
-- [Agustina Landi](https://github.com/agustinalandi1)
-- [Mercedes Slepowron](https://github.com/mslepowron)
-
-
-
-
 ## ⚡️ Dependencias
 Las dependecias necesarias para instalar y correr el programa son:
 
